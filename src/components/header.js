@@ -53,7 +53,6 @@ const Header = ({ siteTitle, open, setOpen }) => {
           quality={95}
           style={{
             position: `absolute`,
-            position: `absolute`,
             left: `3%`,
             top: `32px`,
             margin: `0px`,
