@@ -55,7 +55,7 @@ exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
       rules: [
         {
           test: /\.js$/,
-          include: path.dirname(require.resolve('gatsby-theme-wiki')),
+          include: path.dirname(require.resolve('SleepyNotes')),
           use: [loaders.js()],
         },
       ],
