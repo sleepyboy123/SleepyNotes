@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Anthony Powell <adpowell@mtu.edu>",
   "dependencies": {
+    "@gatsby-contrib/gatsby-plugin-elasticlunr-search": "^3.0.2",
     "@progress/kendo-react-animation": "^2.6.1",
     "@progress/kendo-react-treeview": "^2.6.1",
     "@progress/kendo-theme-default": "^3.2.0",

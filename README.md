@@ -1,11 +1,6 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://blissful-euler-14b462.netlify.com/">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
-  </a>
-</p>
 <h1 align="center">
-  Gatsby Wiki Theme
+  SleepyNotes
 </h1>
 
 A wiki theme for markdown driven documentation sites using [Gatsby](https://github.com/gatsbyjs/gatsby/).

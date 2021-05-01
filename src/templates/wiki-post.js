@@ -8,9 +8,11 @@ export default function Template({ data }) {
   const { markdownRemark: post } = data;
   return (
     <Layout>
-      <Helmet title={`Wiki - ${post.frontmatter.title}`} />
-      <div>
+      <Helmet title={`SleepyNotes - ${post.frontmatter.title}`} />
+      <div style={{paddingBottom: `1.0rem`}}>
         <h1>{post.frontmatter.title}</h1>
+        Written by: {post.frontmatter.author}
+        <hr style={{background: `white`, marginTop: `5px`}}></hr>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
     </Layout>
@@ -24,6 +26,7 @@ export const pageQuery = graphql`
       frontmatter {
         path
         title
+        author
       }
     }
   }

@@ -11,10 +11,13 @@
   width: 300px;
   max-width: 300px;
   background-color: #2E333C;
-  color: rgb(229, 229, 229);
+  color: #E5E5E5;
   margin-top: 96.188px;
   padding-top: 1.45rem;
-  height: 100%;
+  top: 0;
+  bottom: 0;
+  min-height: 0 !important;
+  overflow-y: scroll;
 }
 
 .content-flex {
@@ -29,5 +32,27 @@
 }
 
 .k-item {
-  color: rgb(229, 229, 229);
+  color: #E5E5E5;
+}
+
+.searchInput {
+  background-color: #585F6C;
+  color: #E5E5E5;
+  border-radius: 5px;
+}
+
+.searchInput:focus {
+  outline: none;
+}
+
+.searchList {
+  list-style-type: none;
+  margin: 0;
+  background-color: #585F6C;
+}
+
+.searchItem {
+  margin-left: 4px !important;
+  color: #E5E5E5;
+  text-decoration: none;
 }

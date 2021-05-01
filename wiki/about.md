@@ -1,6 +1,8 @@
 ---
-title: Hello
-path: '/hello'
+title: About
+path: '/about'
+author: 'Sleepyboy'
+tags: ['about']
 ---
 
 ## Creating wiki posts
