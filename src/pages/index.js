@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
@@ -7,17 +7,17 @@ import SEO from '../components/seo';
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`, 'wiki']} />
-    <h1>
-      Welcome{' '}
-      <span role="img" aria-label="wave hello">
-        👋
-      </span>
-    </h1>
-    <p>This is your new gatsby-driven wiki.</p>
-    <p>
-      Add some new pages by following the instructions at the{' '}
-      <Link to="/about">About</Link> page!
-    </p>
+    <h1>Hello Friend</h1>
+    <p>“Sometimes Life’s A Bitch And Then You Keep Living.”</p>
+    <p><i>- Diane Nguyen</i></p>
+    <StaticImage
+      src="../images/Bojack Horseman.png"
+      width={500}
+      quality={95}
+      formats={["AUTO", "WEBP", "AVIF"]}
+      alt="A Gatsby astronaut"
+      style={{ marginBottom: `1.45rem` }}
+    />
   </Layout>
 );
 

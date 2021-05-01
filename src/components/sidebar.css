@@ -6,11 +6,21 @@
 }
 
 .nav-link:hover {
-  background-color: #ededed;
+  color: rgb(229, 229, 229);
+  background-color: transparent;
 }
 
-.nav-link:focus {
-  color: inherit;
+.nav-directory {
+  width: 100%;
+}
+
+.nav-directory:hover {
+  color: rgb(229, 229, 229);
+}
+
+.k-in:hover {
+  color: rgb(229, 229, 229) !important;
+  background-color: #464E5B !important;
 }
 
 .nav {

@@ -1,6 +1,6 @@
 ---
-title: About
-path: '/about'
+title: Hello 1
+path: '/hello1'
 ---
 
 ## Creating wiki posts

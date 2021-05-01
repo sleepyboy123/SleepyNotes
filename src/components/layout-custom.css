@@ -2,18 +2,32 @@
 .container-flex {
   display: flex;
   flex-direction: row;
+  height: calc(100vh - 96.188px);
 }
 
 .sidebar-flex {
+  position: fixed;
   flex-grow: 1;
+  width: 300px;
   max-width: 300px;
+  background-color: #2E333C;
+  color: rgb(229, 229, 229);
+  margin-top: 96.188px;
+  padding-top: 1.45rem;
+  height: 100%;
 }
 
 .content-flex {
   flex-grow: 3;
   margin: 0 auto;
+  margin-left: 300px;
+  margin-top: 100px;
   max-width: 960;
   padding: 0px 1.0875rem 1.45rem;
-  padding-top: 0;
+  padding-top: 1.0875rem;
   flex-grow: 1;
+}
+
+.k-item {
+  color: rgb(229, 229, 229);
 }

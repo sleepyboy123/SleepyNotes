@@ -25,14 +25,8 @@ const Layout = ({ children }) => (
         <Header siteTitle={data.site.siteMetadata.title} />
         <div className="container-flex">
           <Sidebar className="sidebar-flex" />
-          <div className="content-flex">
+          <div className="content-flex" style={{color: `#E5E5E5`}}>
             {children}
-            <hr />
-            <footer>
-              © {new Date().getFullYear()}, Built with
-              {` `}
-              <a href="https://www.gatsbyjs.org">Gatsby</a>
-            </footer>
           </div>
         </div>
       </>

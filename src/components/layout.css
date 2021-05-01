@@ -5,6 +5,7 @@ html {
 }
 body {
   margin: 0;
+  background: #393E46;
 }
 article,
 aside,
@@ -625,12 +626,13 @@ pre tt:after {
   /* padding: 10px 0 !important; */
 }
 
-.k-in:hover {
+/* .k-in:hover {
   color: inherit !important;
-}
+} */
 
 .k-treeview .k-in.k-state-focused {
   border: none !important;
   border-right: 3px solid #ededed !important;
   box-shadow: none !important;
+  color: rgb(229, 229, 229) !important;
 }
