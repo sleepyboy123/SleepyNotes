@@ -31,6 +31,36 @@
   flex-grow: 1;
 }
 
+.headerName {
+  max-width: 90%;
+}
+
+@media screen and (max-width: 1300px) {
+  .content-flex {
+    flex-grow: 3;
+    margin: 0 auto;
+    margin-top: 100px;
+    max-width: 960;
+    padding: 0px 1.0875rem 1.45rem;
+    padding-top: 1.0875rem;
+    flex-grow: 1;
+  }
+
+  .headerName {
+    max-width: 80%;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  .searchBox {
+    display: none;
+  }
+  .headerName {
+    max-width: 60%;
+  }
+}
+
 .k-item {
   color: #E5E5E5;
 }
@@ -57,6 +87,6 @@
   text-decoration: none;
 }
 
-.arrow {
-  transition: none !important;
+.bm-cross-button {
+  top: 104.188px !important;
 }

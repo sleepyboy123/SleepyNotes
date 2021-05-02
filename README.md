@@ -3,6 +3,11 @@
   SleepyNotes
 </h1>
 
+## To Do List
+- Mobile Site
+- Animation for Clicking on Arrow & Sliding Sidebar
+- Fixing Sidebar Bug
+
 A wiki theme for markdown driven documentation sites using [Gatsby](https://github.com/gatsbyjs/gatsby/).
 
 ## Motivation

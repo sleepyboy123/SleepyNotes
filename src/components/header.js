@@ -1,11 +1,10 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { Link, useStaticQuery, graphql } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
 
 import Search from "./search"
 
-const Header = ({ siteTitle, open, setOpen }) => {
+const Header = ({ siteTitle }) => {
   const searchIndex = useStaticQuery(graphql`
     query SearchIndexQuery {
       siteSearchIndex {
@@ -13,10 +12,6 @@ const Header = ({ siteTitle, open, setOpen }) => {
       }
     }
   `)
-
-  const toggleMenu = () => {
-    setOpen(!open);
-  }
 
   return(
     <header
@@ -28,43 +23,10 @@ const Header = ({ siteTitle, open, setOpen }) => {
       height: `96.188px`
     }}
     >
-      {open ? 
-        <StaticImage
-          src="../images/arrow-left.png"
-          formats={["AUTO", "WEBP", "AVIF"]}
-          alt="Close"
-          width={36}
-          quality={95}
-          style={{
-            position: `absolute`,
-            left: `3%`,
-            top: `32px`,
-            margin: `0px`,
-          }}
-          className = "arrow"
-          onClick={() => {toggleMenu()}}
-        />
-      :
-        <StaticImage
-          src="../images/arrow-right.png"
-          formats={["AUTO", "WEBP", "AVIF"]}
-          alt="Open"
-          width={36}
-          quality={95}
-          style={{
-            position: `absolute`,
-            left: `3%`,
-            top: `32px`,
-            margin: `0px`,
-          }}
-          onClick={() => {toggleMenu()}}
-        />
-      }
-      {/* <div onClick={() => {toggleMenu()}}>Hello</div> */}
       <div
+      className = "headerName"
       style={{
         margin: `0 auto`,
-        maxWidth: `90%`,
         padding: `1.45rem 1.0875rem`,
       }}
       >
@@ -79,7 +41,9 @@ const Header = ({ siteTitle, open, setOpen }) => {
             {siteTitle}
           </Link>
         </h1>
-        <div style={{
+        <div 
+        className = "searchBox"
+        style={{
           position: `absolute`,
           right: `10%`,
           top: `32px`,
