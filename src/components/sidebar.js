@@ -72,7 +72,7 @@ const Sidebar = ({ className }) => {
     }
   `)
   return (
-    <Menu styles={ styles } isOpen={ true } pageWrapId={ "page-wrap" } outerContainerId={ "outer-container" }>
+    <Menu styles={ styles } pageWrapId={ "page-wrap" } outerContainerId={ "outer-container" }>
       <NavTree tree={parseLinksToTree(frontMatter['allMarkdownRemark']['edges'])} className={className} />
     </Menu>
   )
