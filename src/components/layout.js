@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
 
@@ -10,7 +10,6 @@ import './layout.css';
 import './layout-custom.css';
 
 const Layout = ({ children }) => {
-  const [open, setOpen] = useState(true);
   const siteTitle = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -22,15 +21,15 @@ const Layout = ({ children }) => {
   `);
 
   return (
-    <>
-      <Header open={open} setOpen={setOpen} siteTitle={siteTitle['site']['siteMetadata']['title']} />
+    <div id="outer-container">
+      <Header siteTitle={siteTitle['site']['siteMetadata']['title']} />
       <div className="container-flex">
-        { open === true && <Sidebar className="sidebar-flex" /> }
+        <Sidebar className="sidebar-flex" />
         <div id="page-wrap" className="content-flex" style={{color: `#E5E5E5`}}>
           {children}
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
