@@ -37,20 +37,12 @@ var styles = {
   bmOverlay: {
     position: 'fixed',
     height: "100%",
-    background: 'rgba(0, 0, 0, 0.3)'
+    background: 'rgba(0, 0, 0, 0)',
+    zIndex: '-1000'
   },
-  // bmMenu: {
-  //   background: '#373a47',
-  //   padding: '2.5em 1.5em 0',
-  //   fontSize: '1.15em'
-  // },
   bmMorphShape: {
     fill: '#373a47'
   },
-  // bmItemList: {
-  //   color: '#b8b7ad',
-  //   padding: '0.8em'
-  // },
   bmItem: {
     display: 'inline-block'
   },
@@ -71,8 +63,9 @@ const Sidebar = ({ className }) => {
       }
     }
   `)
+
   return (
-    <Menu styles={ styles } pageWrapId={ "page-wrap" } outerContainerId={ "outer-container" }>
+    <Menu isOpen={ true } disableOverlayClick styles={ styles } pageWrapId={ "page-wrap" } outerContainerId={ "outer-container" }>
       <NavTree tree={parseLinksToTree(frontMatter['allMarkdownRemark']['edges'])} className={className} />
     </Menu>
   )
