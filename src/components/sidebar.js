@@ -14,7 +14,8 @@ var styles = {
     width: '36px',
     height: '30px',
     left: '36px',
-    top: '36px'
+    top: '36px',
+    zIndex: '1300'
   },
   bmBurgerBars: {
     background: '#E5E5E5'

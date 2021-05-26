@@ -20,7 +20,8 @@ const Header = ({ siteTitle }) => {
       // marginBottom: `1.45rem`,
       position: `fixed`,
       width: `100vw`,
-      height: `96.188px`
+      height: `96.188px`,
+      zIndex: '1200'
     }}
     >
       <div
